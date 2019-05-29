@@ -46,6 +46,15 @@ table, th, td {
     clear: both;
     text-align: center;
 }
+.active1{
+    background-color: green;
+    color: black;
+    font-weight: bold;
+}
+.active{
+    background-color: black;
+    color: red
+}
 #score{
     width: 20%;
     margin-left: auto;
