@@ -45,6 +45,7 @@ table, th, td {
 #stakingTable{
     clear: both;
     text-align: center;
+    border: 1px solid aqua;
 }
 .active1{
     background-color: green;
