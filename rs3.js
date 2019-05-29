@@ -12,8 +12,8 @@ var ratio = 0;
 
 $("#stake").on("click", function(){
     console.log("running");
-    bet = document.getElementById("bet").value;
-    gp = document.getElementById("gp").value;
+    bet = parseInt(document.getElementById("bet").value);
+    gp = parseInt(document.getElementById("gp").value);
     
     console.log( "gp" + gp);
     console.log( "bet" + bet);
