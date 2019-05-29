@@ -1,7 +1,7 @@
 
 
-var bet = 1000000;
-var gp = 1000000;
+var bet = 0;
+var gp = 0;
 var win = 0;
 var loss = 0;
 var lossStreak = 1;
@@ -12,8 +12,8 @@ var ratio = 0;
 
 $("#stake").on("click", function(){
     console.log("running");
-    bet = parseInt(document.getElementById("bet").value);
-    gp = parseInt(document.getElementById("gp").value);
+    bet = (parseInt(document.getElementById("bet").value)) * 1000000;
+    gp = (parseInt(document.getElementById("gp").value)) * 1000000;
     
     console.log( "gp" + gp);
     console.log( "bet" + bet);
