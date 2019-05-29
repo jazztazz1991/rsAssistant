@@ -22,7 +22,7 @@ $("#stake").on("click", function(){
     document.getElementById("cWin").innerHTML = win;
     document.getElementById("cLoss").innerHTML = loss;
     document.getElementById("cTotal").innerHTML = total;
-    document.getElementById("cRatio").innerHTML = ratio
+    document.getElementById("cRatio").innerHTML = parseInt(ratio) + "%";
     
     
     document.getElementById("1").innerHTML = ((bet) / 1000000) + "M";
@@ -70,7 +70,7 @@ $("#sWin").on("click", function(){
     document.getElementById("cWin").innerHTML = win;
     document.getElementById("cLoss").innerHTML = loss;
     document.getElementById("cTotal").innerHTML = total;
-    document.getElementById("cRatio").innerHTML = ratio;
+    document.getElementById("cRatio").innerHTML = parseInt(ratio) + "%";
 });
 
 $("#sLoss").on("click", function(){
@@ -120,5 +120,5 @@ $("#sLoss").on("click", function(){
     document.getElementById("cWin").innerHTML = win;
     document.getElementById("cLoss").innerHTML = loss;
     document.getElementById("cTotal").innerHTML = total;
-    document.getElementById("cRatio").innerHTML = ratio;
+    document.getElementById("cRatio").innerHTML = parseInt(ratio) + "%";
 });
