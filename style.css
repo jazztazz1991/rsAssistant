@@ -1,0 +1,78 @@
+body{
+    width: 90%;
+    background-image:url(CxydJJv.jpg);
+    background-color: lightslategrey;
+    color: lime;
+    margin: auto;
+}
+header{
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+    text-align: center;
+    clear: both;
+}
+nav{
+    float: right;
+    color: yellow;
+}
+nav a{
+    color: yellow;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+#logo{
+    width: 75%;  
+}
+table, th, td {
+  border: 1px solid grey;
+}
+#sData{
+    float: right;
+    width: 50%;
+}
+#stakingB{
+    margin-right: auto;
+    margin-left: 20%;
+    width: 25%;
+    float: left;
+    border-radius: 25%;
+    background-color: rgba(112, 117, 121, 0.9);
+    text-align: center;
+}
+#stakingTable{
+    clear: both;
+    text-align: center;
+}
+#score{
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#sWin{
+    padding: 5px;
+    color: lime;
+    background-color: black;
+    font-size: 24px;
+    margin: 15px;
+}
+#sLoss{
+    padding: 5px;
+    color: red;
+    background-color: black;
+    font-size: 24px;
+    margin: 15px;
+}
+#bossingB{
+    
+    margin-right: 20%;
+    margin-left: auto;
+    width: 25%;
+    float: right;
+    border-radius: 25%;
+    background-color: rgba(112, 117, 121, 0.9);
+    text-align: center;
+}
+
