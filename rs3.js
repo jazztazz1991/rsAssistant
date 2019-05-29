@@ -25,18 +25,19 @@ $("#stake").on("click", function(){
     document.getElementById("cRatio").innerHTML = ratio
     
     
-    document.getElementById("1").innerHTML = ((bet * 2) / 1000000) + "M";
-    document.getElementById("2").innerHTML = ((bet * 4) / 1000000) + "M";
-    document.getElementById("3").innerHTML = ((bet * 8) / 1000000) + "M";
-    document.getElementById("4").innerHTML = ((bet * 16) / 1000000) + "M";
-    document.getElementById("5").innerHTML = ((bet * 32) / 1000000) + "M";
-    document.getElementById("6").innerHTML = ((bet * 64) / 1000000) + "M";
-    document.getElementById("7").innerHTML = ((bet * 128) / 1000000) + "M";
-    document.getElementById("8").innerHTML = ((bet * 256) / 1000000) + "M";
-    document.getElementById("9").innerHTML = ((bet * 512) / 1000000) + "M";
-    document.getElementById("10").innerHTML = ((bet * 1024) / 1000000) + "M";
-    document.getElementById("11").innerHTML = ((bet * 2048) / 1000000) + "M";
-    document.getElementById("12").innerHTML = ((bet * 4096) / 1000000) + "M";
+    document.getElementById("1").innerHTML = ((bet) / 1000000) + "M";
+    document.getElementById("2").innerHTML = ((bet * 2) / 1000000) + "M";
+    document.getElementById("3").innerHTML = ((bet * 4) / 1000000) + "M";
+    document.getElementById("4").innerHTML = ((bet * 8) / 1000000) + "M";
+    document.getElementById("5").innerHTML = ((bet * 16) / 1000000) + "M";
+    document.getElementById("6").innerHTML = ((bet * 32) / 1000000) + "M";
+    document.getElementById("7").innerHTML = ((bet * 64) / 1000000) + "M";
+    document.getElementById("8").innerHTML = ((bet * 128) / 1000000) + "M";
+    document.getElementById("9").innerHTML = ((bet * 256) / 1000000) + "M";
+    document.getElementById("10").innerHTML = ((bet * 512) / 1000000) + "M";
+    document.getElementById("11").innerHTML = ((bet * 1024) / 1000000) + "M";
+    document.getElementById("12").innerHTML = ((bet * 2048) / 1000000) + "M";
+    
 });
 
 $("#sWin").on("click", function(){
