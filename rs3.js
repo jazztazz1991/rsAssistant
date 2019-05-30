@@ -17,9 +17,6 @@ $("#stake").on("click", function(){
     gp = (parseInt(document.getElementById("gp").value)) * 1000000;
     sgp = (parseInt(document.getElementById("gp").value % 2147)) * 1000000;
     
-    console.log( "gp" + gp);
-    console.log( "bet" + bet);
-    
     document.getElementById("cGP").innerHTML = Math.floor((gp / 1000000)) + "M";
     document.getElementById("cSGP").innerHTML = Math.floor((sgp / 1000000)) + "M";
     document.getElementById("cWin").innerHTML = win;
@@ -46,15 +43,12 @@ $("#stake").on("click", function(){
 $("#sWin").on("click", function(){
     console.log("win is running0");
     gp = gp + bet;
+    sgp = gp % 2147000000;
     win = win + 1;
     total = total + 1;
     ratio = win / total;
     
     lossStreak = 1;
-    
-    console.log( "gp" + gp);
-    console.log( "win" + win);
-    console.log( "total" + total);
     
     $("#1").addClass("active1");
     $("#2").removeClass("active");
@@ -70,6 +64,7 @@ $("#sWin").on("click", function(){
     $("#12").removeClass("active");
     
     document.getElementById("cGP").innerHTML = Math.floor((gp / 1000000)) + "M";
+    document.getElementById("cSGP").innerHTML = Math.floor((sgp / 1000000)) + "M";
     document.getElementById("cWin").innerHTML = win;
     document.getElementById("cLoss").innerHTML = loss;
     document.getElementById("cTotal").innerHTML = total;
