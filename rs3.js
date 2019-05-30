@@ -2,6 +2,7 @@
 
 var bet = 0;
 var gp = 0;
+var sgp = 0;
 var win = 0;
 var loss = 0;
 var lossStreak = 1;
@@ -14,15 +15,17 @@ $("#stake").on("click", function(){
     console.log("running");
     bet = (parseInt(document.getElementById("bet").value)) * 1000000;
     gp = (parseInt(document.getElementById("gp").value)) * 1000000;
+    sgp = (parseInt(document.getElementById("gp").value % 2147)) * 1000000;
     
     console.log( "gp" + gp);
     console.log( "bet" + bet);
     
     document.getElementById("cGP").innerHTML = Math.floor((gp / 1000000)) + "M";
+    document.getElementById("cSGP").innerHTML = Math.floor((sgp / 1000000)) + "M";
     document.getElementById("cWin").innerHTML = win;
     document.getElementById("cLoss").innerHTML = loss;
     document.getElementById("cTotal").innerHTML = total;
-    document.getElementById("cRatio").innerHTML = parseInt(ratio) + "%";
+    document.getElementById("cRatio").innerHTML = parseInt(ratio * 100) + "%";
     
     
     document.getElementById("1").innerHTML = ((bet) / 1000000) + "M";
@@ -70,7 +73,7 @@ $("#sWin").on("click", function(){
     document.getElementById("cWin").innerHTML = win;
     document.getElementById("cLoss").innerHTML = loss;
     document.getElementById("cTotal").innerHTML = total;
-    document.getElementById("cRatio").innerHTML = parseInt(ratio) + "%";
+    document.getElementById("cRatio").innerHTML = parseInt(ratio * 100) + "%";
 });
 
 $("#sLoss").on("click", function(){
@@ -120,5 +123,5 @@ $("#sLoss").on("click", function(){
     document.getElementById("cWin").innerHTML = win;
     document.getElementById("cLoss").innerHTML = loss;
     document.getElementById("cTotal").innerHTML = total;
-    document.getElementById("cRatio").innerHTML = parseInt(ratio) + "%";
+    document.getElementById("cRatio").innerHTML = parseInt(ratio * 100) + "%";
 });
