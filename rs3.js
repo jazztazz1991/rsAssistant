@@ -120,3 +120,40 @@ $("#sLoss").on("click", function(){
     document.getElementById("cTotal").innerHTML = total;
     document.getElementById("cRatio").innerHTML = parseInt(ratio * 100) + "%";
 });
+
+
+/*========================================================================================================================================*/
+var tpbody = 0;
+var players = 1;
+
+$("#nexstart").on("click", function(){
+    players = document.getElementById("nexplayers").value;
+    
+    $("#nexDrops").removeClass("hide");
+    console.log("is running");
+})
+
+$("#tBody").on("click", function(){
+    tpbody = tpbody + 1;
+    
+    console.log("is running");
+    
+    document.getElementById("tpbody").innerHTML = tpbody;
+})
+
+$("#nexReset").on("click", function(){
+    tpbody = 0;
+    
+    console.log("is running");
+    
+    document.getElementById("tpbody").innerHTML = tpbody;
+})
+$("#tsFind").on("click", function(){
+    
+    console.log("is running");
+    
+    document.getElementById("tstpbody").innerHTML = tpbody / players;
+})
+
+
+

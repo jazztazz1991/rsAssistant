@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en-us">
+
+	<head>
+		<meta charset="utf-8">
+		<title> RS3 Assistant </title>
+   		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="staking.html">Staking</a>
+            <a href="bossing.html">Bossing</a>
+        </nav>
+        <header>
+            <img id="logo" src="blast-from-past-you-can-now-play-runescape-classic-android.w1456.jpg">
+            <h1> Nex</h1>
+        </header>
+        
+        <h3>Players in Team? <input type="number" id="nexplayers"></h3>
+        <button type="submit" id="nexstart"> Start </button>
+        <div id="nexDrops" class="hide">
+            <h3>Drop: </h3>
+            <button type="submit" id="tBody">Torva Plate Body</button>
+
+            <div id="tSplit">
+                <h3>Team Split <button type="submit" id="tsFind">find split</button></h3>
+                <p># of items per person:</p>
+                <br>
+                <p>Torva Plate Body: <span id="tstpbody"></span></p>
+            </div>
+
+            <div>
+                <h3>Drops this hour: <button id="nexReset">reset</button></h3>
+                <p>Torva Plate Body: <span id="tpbody"></span></p>
+            </div>
+        </div>
+        
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+        <script type="text/javascript" src="rs3.js"></script>
+    </body>
+</html>
