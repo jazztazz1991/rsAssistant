@@ -123,7 +123,7 @@ $("#sLoss").on("click", function(){
 
 
 /*========================================================================================================================================*/
-var tpbody = 0;
+var toBody = 0, toHelm = 0, toLegs = 0, toGloves = 0, toBoots = 0, peCowl = 0, peBody = 0, peChaps = 0, peGloves = 0, peBoots = 0, zaBow = 0, viMask = 0, viBody = 0, viLegs = 0, viGloves = 0, viBoots = 0, viWand = 0, viBook = 0, onyxBoltse = 0, grDhide = 0, udragonstone = 0, grA = 0,grDW = 0, grT = 0, maLog = 0, brewRe = 0, restoreBr = 0, maSeed = 0, toSeed = 0, luminites = 0, runites = 0;
 var players = 1;
 
 $("#nexstart").on("click", function(){
@@ -133,26 +133,298 @@ $("#nexstart").on("click", function(){
     console.log("is running");
 })
 
+$("#tHelm").on("click", function(){
+        console.log("toHelm = " + toHelm);
+
+    toHelm = toHelm + 1;
+    
+    console.log("is running");
+    console.log("toHelm = " + toHelm);
+    
+    document.getElementById("toHelm").innerHTML = toHelm;
+})
 $("#tBody").on("click", function(){
-    tpbody = tpbody + 1;
+    toBody = toBody + 1;
     
     console.log("is running");
     
-    document.getElementById("tpbody").innerHTML = tpbody;
+    document.getElementById("toBody").innerHTML = toBody;
+})
+$("#tLegs").on("click", function(){
+    toLegs = toLegs + 1;
+    
+    console.log("is running");
+    
+    document.getElementById("toLegs").innerHTML = toLegs;
+})
+$("#tGloves").on("click", function(){
+    toGloves = toGloves + 1;
+    
+    console.log("is running");
+    
+    document.getElementById("toGloves").innerHTML = toGloves;
+})
+$("#tBoots").on("click", function(){
+    toBoots = toBoots + 1;
+    
+    console.log("is running");
+    
+    document.getElementById("toBoots").innerHTML = toBoots;
+})
+$("#pCowl").on("click", function(){
+    peCowl = peCowl + 1;
+    
+    console.log("is running");
+    
+    document.getElementById("peCowl").innerHTML = peCowl;
+})
+$("#pBody").on("click", function(){
+    peBody = peBody + 1;
+    
+    console.log("is running");
+    
+    document.getElementById("peBody").innerHTML = peBody;
+})
+$("#pChaps").on("click", function(){
+    peChaps = peChaps + 1;
+    
+    console.log("is running");
+    
+    document.getElementById("peChaps").innerHTML = peChaps;
+})
+$("#pGloves").on("click", function(){
+    peGloves = peGloves + 1;
+    
+    console.log("is running");
+    
+    document.getElementById("peGloves").innerHTML = peGloves;
+})
+$("#pBoots").on("click", function(){
+    peBoots = peBoots + 1;
+    
+    console.log("is running");
+    
+    document.getElementById("peBoots").innerHTML = peBoots;
+})
+$("#zBow").on("click", function(){
+    zaBow = zaBow + 1;
+    
+    console.log("is running");
+    
+    document.getElementById("zaBow").innerHTML = zaBow;
+})
+$("#vMask").on("click", function(){
+    viMask = viMask + 1;
+    
+    console.log("is running");
+    
+    document.getElementById("viMask").innerHTML = viMask;
+})
+$("#vTop").on("click", function(){
+    viBody = viBody + 1;
+    
+    console.log("is running");
+    
+    document.getElementById("viBody").innerHTML = viBody;
+})
+$("#vLegs").on("click", function(){
+    viLegs = viLegs + 1;
+    
+    console.log("is running");
+    
+    document.getElementById("viLegs").innerHTML = viLegs;
+})
+$("#vGloves").on("click", function(){
+    viGloves = viGloves + 1;
+    
+    console.log("is running");
+    
+    document.getElementById("viGloves").innerHTML = viGloves;
+})
+$("#vBoots").on("click", function(){
+    viBoots = viBoots + 1;
+    
+    console.log("is running");
+    
+    document.getElementById("viBoots").innerHTML = viBoots;
+})
+$("#vWand").on("click", function(){
+    viWand = viWand + 1;
+    
+    console.log("is running");
+    
+    document.getElementById("viWand").innerHTML = viWand;
+})
+$("#vBook").on("click", function(){
+    viBook = viBook + 1;
+    
+    console.log("is running");
+    
+    document.getElementById("viBook").innerHTML = viBook;
+})
+$("#onyxBolts").on("click", function(){
+    onyxBoltse = onyxBoltse + 375;
+    
+    console.log("is running");
+    
+    document.getElementById("onyxBoltse").innerHTML = onyxBoltse;
+})
+$("#gDhide").on("click", function(){
+    grDhide = grDhide + 400;
+    
+    console.log("is running");
+    
+    document.getElementById("grDhide").innerHTML = grDhide;
+})
+$("#dragonstone").on("click", function(){
+    udragonstone = udragonstone + 20;
+    
+    console.log("is running");
+    
+    document.getElementById("udragonstone").innerHTML = udragonstone;
+})
+$("#gADW").on("click", function(){
+    grA = grA + 75;
+    grDW = grDW + 75;
+    
+    console.log("is running");
+    
+    document.getElementById("grA").innerHTML = grA;
+    document.getElementById("grDW").innerHTML = grDW;
+})
+$("#gT").on("click", function(){
+    grT = grT + 40;
+    
+    console.log("is running");
+    
+    document.getElementById("grT").innerHTML = grT;
+})
+$("#mLog").on("click", function(){
+    maLog = maLog + 375;
+    
+    console.log("is running");
+    
+    document.getElementById("maLog").innerHTML = maLog;
+})
+$("#brewR").on("click", function(){
+    brewRe = brewRe + 30;
+    restoreBr = restoreBr + 10;
+    
+    console.log("is running");
+    
+    document.getElementById("brewRe").innerHTML = brewRe;
+    document.getElementById("restoreBr").innerHTML = restoreBr;
+})
+$("#restoreB").on("click", function(){
+    restoreBr = restoreBr + 30;
+    brewRe = brewRe + 10;
+    
+    console.log("is running");
+    
+    document.getElementById("restoreBr").innerHTML = restoreBr;
+    document.getElementById("brewRe").innerHTML = brewRe;
+})
+$("#mSeed").on("click", function(){
+    maSeed = maSeed + 5;
+    
+    console.log("is running");
+    
+    document.getElementById("maSeed").innerHTML = maSeed;
+})
+$("#tSeed").on("click", function(){
+    toSeed = toSeed + 12;
+    
+    console.log("is running");
+    
+    document.getElementById("toSeed").innerHTML = toSeed;
+})
+$("#luminite").on("click", function(){
+    luminites = luminites + 80;
+    
+    console.log("is running");
+    
+    document.getElementById("luminites").innerHTML = luminites;
+})
+$("#runite").on("click", function(){
+    runites = runites + 80;
+    
+    console.log("is running");
+    
+    document.getElementById("runites").innerHTML = runites;
 })
 
 $("#nexReset").on("click", function(){
-    tpbody = 0;
+    toBody= 0, toHelm= 0, toLegs= 0, toGloves= 0, toBoots= 0, peCowl= 0, peBody= 0, peChaps= 0, peGloves= 0, peBoots= 0, zaBow= 0, viMask= 0, viBody= 0, viLegs= 0, viGloves= 0, viBoots= 0, viWand= 0, viBook= 0, onyxBoltse= 0, grDhide= 0, udragonstone= 0, grADW= 0, grT= 0, maLog= 0, brewRe= 0, restoreBr= 0, maSeed= 0, toSeed= 0, luminites= 0, runites= 0;
     
     console.log("is running");
     
-    document.getElementById("tpbody").innerHTML = tpbody;
+    document.getElementById("toHelm").innerHTML = toHelm;
+    document.getElementById("toBody").innerHTML = toBody;
+    document.getElementById("toLegs").innerHTML = toLegs;
+    document.getElementById("toGloves").innerHTML = toGloves;
+    document.getElementById("toBoots").innerHTML = toBoots;
+    document.getElementById("peCowl").innerHTML = peCowl;
+    document.getElementById("peBody").innerHTML = peBody;
+    document.getElementById("peChaps").innerHTML = peChaps;
+    document.getElementById("peGloves").innerHTML = peGloves;
+    document.getElementById("peBoots").innerHTML = peBoots;
+    document.getElementById("zaBow").innerHTML = zaBow;
+    document.getElementById("viMask").innerHTML = viMask;
+    document.getElementById("viBody").innerHTML = viBody;
+    document.getElementById("viLegs").innerHTML = viLegs;
+    document.getElementById("viGloves").innerHTML = viGloves;
+    document.getElementById("viBoots").innerHTML = viBoots;
+    document.getElementById("viWand").innerHTML = viWand;
+    document.getElementById("viBook").innerHTML = viBook;
+    document.getElementById("onyxBoltse").innerHTML = onyxBoltse;
+    document.getElementById("grDhide").innerHTML = grDhide;
+    document.getElementById("udragonstone").innerHTML = udragonstone;
+    document.getElementById("grA").innerHTML = grA;
+    document.getElementById("grDW").innerHTML = grDW;
+    document.getElementById("grT").innerHTML = grT;
+    document.getElementById("maLog").innerHTML = maLog;
+    document.getElementById("brewRe").innerHTML = brewRe;
+    document.getElementById("restoreBr").innerHTML = restoreBr;
+    document.getElementById("maSeed").innerHTML = maSeed;
+    document.getElementById("toSeed").innerHTML = toSeed;
+    document.getElementById("luminites").innerHTML = luminites;
+    document.getElementById("runites").innerHTML = runites;
 })
 $("#tsFind").on("click", function(){
     
     console.log("is running");
     
-    document.getElementById("tstpbody").innerHTML = tpbody / players;
+    document.getElementById("tstoHelm").innerHTML = toHelm / players;
+    document.getElementById("tstoBody").innerHTML = toBody / players;
+    document.getElementById("tstoLegs").innerHTML = toLegs / players;
+    document.getElementById("tstoGloves").innerHTML = toGloves / players;
+    document.getElementById("tstoBoots").innerHTML = toBoots / players;
+    document.getElementById("tspeCowl").innerHTML = peCowl / players;
+    document.getElementById("tspeBody").innerHTML = peBody / players;
+    document.getElementById("tspeChaps").innerHTML = peChaps / players;
+    document.getElementById("tspeGloves").innerHTML = peGloves / players;
+    document.getElementById("tspeBoots").innerHTML = peBoots / players;
+    document.getElementById("tszaBow").innerHTML = zaBow / players;
+    document.getElementById("tsviMask").innerHTML = viMask / players;
+    document.getElementById("tsviBody").innerHTML = viBody / players;
+    document.getElementById("tsviLegs").innerHTML = viLegs / players;
+    document.getElementById("tsviGloves").innerHTML = viGloves / players;
+    document.getElementById("tsviBoots").innerHTML = viBoots / players;
+    document.getElementById("tsviWand").innerHTML = viWand / players;
+    document.getElementById("tsviBook").innerHTML = viBook / players;
+    document.getElementById("tsonyxBoltse").innerHTML = onyxBoltse / players;
+    document.getElementById("tsgrDhide").innerHTML = grDhide / players;
+    document.getElementById("tsudragonstone").innerHTML = udragonstone / players;
+    document.getElementById("tsgrA").innerHTML = grA / players;
+    document.getElementById("tsgrDW").innerHTML = grDW / players;
+    document.getElementById("tsgrT").innerHTML = grT / players;
+    document.getElementById("tsmaLog").innerHTML = maLog / players;
+    document.getElementById("tsbrewRe").innerHTML = brewRe / players;
+    document.getElementById("tsrestoreBr").innerHTML = restoreBr / players;
+    document.getElementById("tsmaSeed").innerHTML = maSeed / players;
+    document.getElementById("tstoSeed").innerHTML = toSeed / players;
+    document.getElementById("tsluminites").innerHTML = luminites / players;
+    document.getElementById("tsrunites").innerHTML = runites / players;
 })
 
 
