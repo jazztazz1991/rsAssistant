@@ -103,6 +103,17 @@ table, th, td {
     margin: 50px;
 }
 #tSplit{
-    float: right;
 }
 
+button{
+    background-color: black;
+    color: lime;
+    padding: 5px;
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.organize{
+    width: 28%;
+    float: left;
+}

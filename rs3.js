@@ -130,6 +130,7 @@ $("#nexstart").on("click", function(){
     players = document.getElementById("nexplayers").value;
     
     $("#nexDrops").removeClass("hide");
+    $("#numberofplayers").addClass("hide");
     console.log("is running");
 })
 
@@ -353,10 +354,17 @@ $("#runite").on("click", function(){
     document.getElementById("runites").innerHTML = runites;
 })
 
-$("#nexReset").on("click", function(){
-    toBody= 0, toHelm= 0, toLegs= 0, toGloves= 0, toBoots= 0, peCowl= 0, peBody= 0, peChaps= 0, peGloves= 0, peBoots= 0, zaBow= 0, viMask= 0, viBody= 0, viLegs= 0, viGloves= 0, viBoots= 0, viWand= 0, viBook= 0, onyxBoltse= 0, grDhide= 0, udragonstone= 0, grADW= 0, grT= 0, maLog= 0, brewRe= 0, restoreBr= 0, maSeed= 0, toSeed= 0, luminites= 0, runites= 0;
+$(".nexReset").on("click", function(){
+    toBody= 0, toHelm= 0, toLegs= 0, toGloves= 0, toBoots= 0, peCowl= 0, peBody= 0, peChaps= 0, peGloves= 0, peBoots= 0, zaBow= 0, viMask= 0, viBody= 0, viLegs= 0, viGloves= 0, viBoots= 0, viWand= 0, viBook= 0, onyxBoltse= 0, grDhide= 0, udragonstone= 0, grA= 0,grDW = 0, grT= 0, maLog= 0, brewRe= 0, restoreBr= 0, maSeed= 0, toSeed= 0, luminites= 0, runites= 0;
     
     console.log("is running");
+    $("#nexDrops").addClass("hide");
+    $("#tSplit").addClass("hide");
+    $("#numberofplayers").removeClass("hide");
+    $("#drops").removeClass("hide");
+    
+    
+    
     
     document.getElementById("toHelm").innerHTML = toHelm;
     document.getElementById("toBody").innerHTML = toBody;
@@ -393,6 +401,8 @@ $("#nexReset").on("click", function(){
 $("#tsFind").on("click", function(){
     
     console.log("is running");
+    $("#drops").addClass("hide");
+    $("#tSplit").removeClass("hide");
     
     document.getElementById("tstoHelm").innerHTML = toHelm / players;
     document.getElementById("tstoBody").innerHTML = toBody / players;
