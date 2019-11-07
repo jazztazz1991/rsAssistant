@@ -103,6 +103,15 @@ table, th, td {
     margin: 50px;
 }
 #tSplit{
+    background-color: rgba(97, 91, 91, 0.39);
+    overflow: hidden;
+    clear: both;
+    
+}
+#drops{
+    background-color: rgba(97, 91, 91, 0.39);
+    overflow: hidden;
+    clear: both;
 }
 
 button{
