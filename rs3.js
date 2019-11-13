@@ -439,3 +439,41 @@ $("#tsFind").on("click", function(){
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//=====================================================
+    // timer
+var counter = 0;
+var timer = 0;
+
+function timeIt(){
+    counter++;
+    document.getElementById("timer").innerHTML = counter;
+}
+$("#timerStart").on("click", function(){
+    document.getElementById("timer").innerHTML = 0;
+    setInterval(timeIt, 1000)
+})
+
+
