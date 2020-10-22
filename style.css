@@ -106,14 +106,14 @@ table, th, td {
 #ed2{
     width: 225px;
     height: 125px;
-    background-image: url(maxresdefault.jpg);
+    background-image: url(images/maxresdefault.jpg);
     background-size: cover;
     margin: 50px;
 }
 #nex{
     width: 225px;
     height: 125px;
-    background-image: url(nex.jpg);
+    background-image: url(images/nex.jpg);
     background-size: cover;
     margin: 50px;
 }
